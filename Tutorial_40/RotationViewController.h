@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  RotationViewController.h
 //  Tutorial_40
 //
 //  Created by Admin on 08.07.15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface RotationViewController : UIViewController
 
 @end
-

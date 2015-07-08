@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		84CCFB701B4CB1E6004CF14A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CCFB6F1B4CB1E6004CF14A /* main.m */; };
 		84CCFB731B4CB1E6004CF14A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CCFB721B4CB1E6004CF14A /* AppDelegate.m */; };
-		84CCFB761B4CB1E6004CF14A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CCFB751B4CB1E6004CF14A /* FirstViewController.m */; };
-		84CCFB791B4CB1E6004CF14A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CCFB781B4CB1E6004CF14A /* SecondViewController.m */; };
 		84CCFB7C1B4CB1E6004CF14A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CCFB7A1B4CB1E6004CF14A /* Main.storyboard */; };
 		84CCFB7E1B4CB1E6004CF14A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CCFB7D1B4CB1E6004CF14A /* Images.xcassets */; };
 		84CCFB811B4CB1E6004CF14A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CCFB7F1B4CB1E6004CF14A /* LaunchScreen.xib */; };
 		84CCFB8D1B4CB1E6004CF14A /* Tutorial_40Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CCFB8C1B4CB1E6004CF14A /* Tutorial_40Tests.m */; };
+		84CCFB981B4CB342004CF14A /* TapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CCFB971B4CB342004CF14A /* TapViewController.m */; };
+		84CCFB9B1B4CB35E004CF14A /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CCFB9A1B4CB35E004CF14A /* SwipeViewController.m */; };
+		84CCFB9E1B4CB372004CF14A /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CCFB9D1B4CB372004CF14A /* PanViewController.m */; };
+		84CCFBA11B4CB387004CF14A /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CCFBA01B4CB387004CF14A /* PinchViewController.m */; };
+		84CCFBA41B4CB39E004CF14A /* RotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CCFBA31B4CB39E004CF14A /* RotationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +36,22 @@
 		84CCFB6F1B4CB1E6004CF14A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84CCFB711B4CB1E6004CF14A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84CCFB721B4CB1E6004CF14A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84CCFB741B4CB1E6004CF14A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		84CCFB751B4CB1E6004CF14A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		84CCFB771B4CB1E6004CF14A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		84CCFB781B4CB1E6004CF14A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		84CCFB7B1B4CB1E6004CF14A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84CCFB7D1B4CB1E6004CF14A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84CCFB801B4CB1E6004CF14A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		84CCFB861B4CB1E6004CF14A /* Tutorial_40Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tutorial_40Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CCFB8B1B4CB1E6004CF14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CCFB8C1B4CB1E6004CF14A /* Tutorial_40Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tutorial_40Tests.m; sourceTree = "<group>"; };
+		84CCFB961B4CB342004CF14A /* TapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapViewController.h; sourceTree = "<group>"; };
+		84CCFB971B4CB342004CF14A /* TapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapViewController.m; sourceTree = "<group>"; };
+		84CCFB991B4CB35E004CF14A /* SwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeViewController.h; sourceTree = "<group>"; };
+		84CCFB9A1B4CB35E004CF14A /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
+		84CCFB9C1B4CB372004CF14A /* PanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanViewController.h; sourceTree = "<group>"; };
+		84CCFB9D1B4CB372004CF14A /* PanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanViewController.m; sourceTree = "<group>"; };
+		84CCFB9F1B4CB387004CF14A /* PinchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchViewController.h; sourceTree = "<group>"; };
+		84CCFBA01B4CB387004CF14A /* PinchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchViewController.m; sourceTree = "<group>"; };
+		84CCFBA21B4CB39E004CF14A /* RotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationViewController.h; sourceTree = "<group>"; };
+		84CCFBA31B4CB39E004CF14A /* RotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +95,20 @@
 			children = (
 				84CCFB711B4CB1E6004CF14A /* AppDelegate.h */,
 				84CCFB721B4CB1E6004CF14A /* AppDelegate.m */,
-				84CCFB741B4CB1E6004CF14A /* FirstViewController.h */,
-				84CCFB751B4CB1E6004CF14A /* FirstViewController.m */,
-				84CCFB771B4CB1E6004CF14A /* SecondViewController.h */,
-				84CCFB781B4CB1E6004CF14A /* SecondViewController.m */,
 				84CCFB7A1B4CB1E6004CF14A /* Main.storyboard */,
 				84CCFB7D1B4CB1E6004CF14A /* Images.xcassets */,
 				84CCFB7F1B4CB1E6004CF14A /* LaunchScreen.xib */,
 				84CCFB6D1B4CB1E6004CF14A /* Supporting Files */,
+				84CCFB961B4CB342004CF14A /* TapViewController.h */,
+				84CCFB971B4CB342004CF14A /* TapViewController.m */,
+				84CCFB991B4CB35E004CF14A /* SwipeViewController.h */,
+				84CCFB9A1B4CB35E004CF14A /* SwipeViewController.m */,
+				84CCFB9C1B4CB372004CF14A /* PanViewController.h */,
+				84CCFB9D1B4CB372004CF14A /* PanViewController.m */,
+				84CCFB9F1B4CB387004CF14A /* PinchViewController.h */,
+				84CCFBA01B4CB387004CF14A /* PinchViewController.m */,
+				84CCFBA21B4CB39E004CF14A /* RotationViewController.h */,
+				84CCFBA31B4CB39E004CF14A /* RotationViewController.m */,
 			);
 			path = Tutorial_40;
 			sourceTree = "<group>";
@@ -224,10 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84CCFB791B4CB1E6004CF14A /* SecondViewController.m in Sources */,
 				84CCFB731B4CB1E6004CF14A /* AppDelegate.m in Sources */,
-				84CCFB761B4CB1E6004CF14A /* FirstViewController.m in Sources */,
+				84CCFBA11B4CB387004CF14A /* PinchViewController.m in Sources */,
 				84CCFB701B4CB1E6004CF14A /* main.m in Sources */,
+				84CCFBA41B4CB39E004CF14A /* RotationViewController.m in Sources */,
+				84CCFB981B4CB342004CF14A /* TapViewController.m in Sources */,
+				84CCFB9B1B4CB35E004CF14A /* SwipeViewController.m in Sources */,
+				84CCFB9E1B4CB372004CF14A /* PanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

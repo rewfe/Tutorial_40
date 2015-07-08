@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  PanViewController.h
 //  Tutorial_40
 //
 //  Created by Admin on 08.07.15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
-
+@interface PanViewController : UIViewController
 
 @end
-
