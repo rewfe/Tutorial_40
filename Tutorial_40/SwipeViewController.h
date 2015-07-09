@@ -10,4 +10,7 @@
 
 @interface SwipeViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *viewOrange;
+@property (weak, nonatomic) IBOutlet UIView *viewBlack;
+@property (weak, nonatomic) IBOutlet UIView *viewGreen;
 @end
