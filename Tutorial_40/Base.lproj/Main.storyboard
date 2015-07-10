@@ -22,22 +22,32 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpA-Ro-eId">
-                                <rect key="frame" x="250" y="240" width="100" height="100"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YJq-k1-xm6">
+                                <rect key="frame" x="247" y="210" width="100" height="100"/>
                                 <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="pvH-JA-DKE" secondAttribute="centerX" id="P2t-kn-ubW"/>
-                            <constraint firstItem="bpA-Ro-eId" firstAttribute="centerX" secondItem="pvH-JA-DKE" secondAttribute="centerX" id="dnq-xU-dh9"/>
+                            <constraint firstItem="pvH-JA-DKE" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Sxc-lQ-yqF"/>
                             <constraint firstAttribute="centerY" secondItem="pvH-JA-DKE" secondAttribute="centerY" constant="252" id="jmZ-2e-OH9"/>
-                            <constraint firstAttribute="centerY" secondItem="bpA-Ro-eId" secondAttribute="centerY" constant="10" id="kKw-YC-Xm5"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Sxc-lQ-yqF"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="P2t-kn-ubW"/>
+                                <include reference="Sxc-lQ-yqF"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tap" image="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="testView" destination="bpA-Ro-eId" id="cWY-cr-jhM"/>
+                        <outlet property="testView" destination="YJq-k1-xm6" id="wEx-PY-lxZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -62,14 +72,39 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2g-kg-BRl">
+                                <rect key="frame" x="279" y="458" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CH-WB-fw7">
+                                <rect key="frame" x="279" y="400" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhf-mC-VcU">
+                                <rect key="frame" x="250" y="234" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="lyL-Db-xb6" secondAttribute="centerY" constant="252" id="1bs-vQ-eL5"/>
+                            <constraint firstAttribute="centerX" secondItem="Z2g-kg-BRl" secondAttribute="centerX" id="eUB-HI-Wsf"/>
+                            <constraint firstAttribute="centerX" secondItem="9CH-WB-fw7" secondAttribute="centerX" id="lkg-BF-nQv"/>
+                            <constraint firstAttribute="centerY" secondItem="Z2g-kg-BRl" secondAttribute="centerY" constant="-168.5" id="n8F-se-XlA"/>
                             <constraint firstAttribute="centerX" secondItem="lyL-Db-xb6" secondAttribute="centerX" id="rJ9-LO-2ZL"/>
+                            <constraint firstAttribute="centerY" secondItem="9CH-WB-fw7" secondAttribute="centerY" constant="-110.5" id="vz1-rC-t0D"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pan" image="first" id="cpe-FT-cYZ"/>
+                    <connections>
+                        <outlet property="horizontalVelocityLabel" destination="9CH-WB-fw7" id="kUI-qD-UzD"/>
+                        <outlet property="testView" destination="uhf-mC-VcU" id="xHX-7F-dNb"/>
+                        <outlet property="verticalVelocityLabel" destination="Z2g-kg-BRl" id="0q9-O0-zwc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flb-TF-Q7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,13 +128,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="350-nq-Dwx">
-                                <rect key="frame" x="320" y="234" width="320" height="100"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="401" y="234" width="239" height="100"/>
-                                </variation>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKM-ZB-93q">
                                 <rect key="frame" x="-320" y="234" width="320" height="100"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -109,6 +137,13 @@
                                 <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="234" width="400" height="100"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="350-nq-Dwx">
+                                <rect key="frame" x="320" y="234" width="320" height="100"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="401" y="234" width="239" height="100"/>
                                 </variation>
                             </view>
                         </subviews>
@@ -147,6 +182,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0mk-o9-Edy">
+                                <rect key="frame" x="255" y="221" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -155,6 +194,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pinch" image="first" id="9OV-Rz-KCO"/>
+                    <connections>
+                        <outlet property="testView" destination="0mk-o9-Edy" id="O6L-Uv-ynL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXP-KK-wKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,6 +220,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9e-C4-KMi">
+                                <rect key="frame" x="250" y="312" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -186,6 +232,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rotation" image="first" id="OPx-hQ-fJj"/>
+                    <connections>
+                        <outlet property="testView" destination="e9e-C4-KMi" id="aaN-co-5lp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LL2-h5-pKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
