@@ -8,7 +8,10 @@
 
 #import "PinchViewController.h"
 
+
 @interface PinchViewController ()
+
+-(void)handlePinchWithGestureRecognizer:(UIPinchGestureRecognizer *)pinchGestureRecognizer;
 
 @end
 
@@ -16,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIPinchGestureRecognizer *pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinchWithGestureRecognizer:)];
+    [self.testView addGestureRecognizer:pinchGestureRecognizer];
     // Do any additional setup after loading the view.
 }
 
@@ -24,6 +29,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)handlePinchWithGestureRecognizer:(UIPinchGestureRecognizer *)pinchGestureRecognizer{
+    self.testView.transform = CGAffineTransformScale(self.testView.transform, pinchGestureRecognizer.scale, pinchGestureRecognizer.scale);
+    pinchGestureRecognizer.scale = 1.0;
+    
+}
 /*
 #pragma mark - Navigation
 
